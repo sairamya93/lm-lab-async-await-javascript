@@ -5,6 +5,7 @@ const promise = new Promise((resolve, reject) => {
 	if (randomInt % 2 === 0) {
 		// Success
 		setTimeout(() => resolve('done'), 2000);
+		
 	} else {
 		// Failure
 		setTimeout(() => reject('error'), 2000);
@@ -12,3 +13,11 @@ const promise = new Promise((resolve, reject) => {
 });
 
 // Your solution(s) to exercise001 here!
+//Success Response
+promise.then((response) => {
+	console.log(`Yay! Promise resolved with response: ${response}`);
+})
+//Failure Response
+.catch((response) => {
+	console.log(`Boo. Promise rejected with response: ${response}`);
+})
