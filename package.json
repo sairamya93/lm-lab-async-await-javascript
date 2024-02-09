@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/techreturners/lm-lab-async-await-javascript#readme",
   "dependencies": {
-    "node-fetch": "^3.2.10"
+    "node-fetch": "^3.3.2"
   }
 }
